@@ -1,5 +1,6 @@
 package Teste;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,6 +20,7 @@ public class LoginTest {
         //Facem browserul modul maximize
         driver.manage().window().maximize();
 
+        //elementMethods= new ElementMethod(driver);
         //Declari elementul Signin
         WebElement signinElement = driver.findElement(By.id("btn1"));
         signinElement.click();
@@ -31,10 +33,16 @@ public class LoginTest {
         String passwordValue = "12234";
         passwordElement.sendKeys(passwordValue);
 
-        WebElement clickElement = driver.findElement(By.id("enterbtn"));
-        clickElement.click();
+
+
+
+
+
 
 
 
     }
+
+
+
 }
